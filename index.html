@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src='index.js'></script>
+        <title>Mixed Messages</title>
+    </head>
+
+    <body>
+        <h1>Mixed Messages</h1>
+        <p>See a random message for a random horoscope.</p>
+
+        <p id="zodiac"></p>
+        <p id="ruler"></p>
+        <p id="message"></p>
+
+        <p>Keep refreshing until you hit your zodiac sign.</p>
+
+        <script>
+            document.getElementById("zodiac").innerHTML = `Your random zodiac sign is: ${sign(zodiac)}`;
+            document.getElementById("ruler").innerHTML = `Your random ruler is: ${zodiacRuler(ruler)}`;
+            document.getElementById("message").innerHTML = `Your positive message is: ${positiveMessage(messageNum)}`;
+        </script>
+    </body>
+</html>
