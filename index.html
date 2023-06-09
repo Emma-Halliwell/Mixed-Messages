@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <script src='index.js'></script>
+        <link rel="stylesheet" type="text/css" href="index.css">
         <title>Mixed Messages</title>
     </head>
 
@@ -17,8 +18,8 @@
         <p>Keep refreshing until you hit your zodiac sign.</p>
 
         <script>
-            document.getElementById("zodiac").innerHTML = `Your random zodiac sign is: ${sign(zodiac)}`;
-            document.getElementById("ruler").innerHTML = `Your random ruler is: ${zodiacRuler(ruler)}`;
+            document.getElementById("zodiac").innerHTML = `Your zodiac sign is: ${sign(zodiac)}`;
+            document.getElementById("ruler").innerHTML = `Your ruler is: ${zodiacRuler(ruler)}`;
             document.getElementById("message").innerHTML = `Your positive message is: ${positiveMessage(messageNum)}`;
         </script>
     </body>

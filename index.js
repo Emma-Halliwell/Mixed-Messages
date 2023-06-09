@@ -27,6 +27,8 @@ const sign = () => {
         return 'Aquarius';
     } else if (zodiac >= 331 && zodiac <= 360) {
         return 'Pisces';
+    } else {
+        return 'You were not born within the zodiac signs'
     }
 };
 
@@ -64,7 +66,10 @@ const zodiacRuler = () => {
             break;
         case 10:
             return 'Neptune'
-            break;        
+            break;
+        default:
+            return 'Earth'
+            break;    
     }
 };
 
@@ -127,6 +132,10 @@ const positiveMessage = () => {
             break;
         case 13:
             return message[12]
+            break;
+
+        default:
+            return 'You are awesome just as you are - Anonymous'
             break;
     }
 };
