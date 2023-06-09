@@ -29,3 +29,41 @@ const sign = () => {
         return 'Pisces';
     }
 };
+
+// Random selection of a zodiac ruler
+const ruler = Math.floor(Math.random() * 10);
+
+const zodiacRuler = () => {
+    switch (ruler) {
+        case 1:
+            return 'Mars'
+            break;
+        case 2:
+            return 'Venus'
+            break;
+        case 3:
+            return 'Mercury'
+            break;
+        case 4:
+            return 'Moon'
+            break;
+        case 5:
+            return 'Sun'
+            break;
+        case 6:
+            return 'Pluto'
+            break;
+        case 7:
+            return 'Jupiter'
+            break;
+        case 8:
+            return 'Saturn'
+            break;
+        case 9:
+            return 'Uranus'
+            break;
+        case 10:
+            return 'Neptune'
+            break;        
+    }
+};
